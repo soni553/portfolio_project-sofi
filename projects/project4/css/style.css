@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: ltr;
+}
+
+body {
+    background: linear-gradient(180deg, #281EFF, #2DFF8C) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #FFFFFF;
+    font-family: "Varela Round", serif;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 110px;
+    padding: 20px;
+    width: 70vw;
+    height: 75vh;
+}
+
+h1,
+h2,
+p {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 9rem;
+    font-family: "Satisfy", serif;
+    text-shadow: 0px 0px 36px #00000087;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 1rem;
+    text-align: right;
+    justify-content: right;
+}
+
+input[type=text],
+input[type=email] {
+    background: #f6f6f615 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+    width: 18vw;
+    height: 37px;
+}
+
+input[type=submit] {
+    align-self: flex-end;
+    height: 37px;
+    width: 10vw;
+    background-color: #FFFFFF;
+    color: #1C1C1C;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #1c1c1c50;
+    color: #FFFFFF;
+    transition: 2s;
+    box-shadow: 0px 0px 6px #FFFFFF;
+
+}
+
+/* responsive */
+
+@media (max-width: 1099.98px) {
+    .container {
+        padding: 15px;
+        width: 65vw;
+    }
+
+    h1 {
+        font-size: 7rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .container {
+        padding: 15px;
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .container {
+        width: 85vw;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    input[type=text],
+    input[type=email] {
+        width: 70vw;
+        height: 35px;
+    }
+
+    input[type=submit] {
+        height: 35px;
+        width: 70vw;
+        align-self: center;
+    }
+}
